@@ -5,7 +5,8 @@ from sqlalchemy import create_engine
 
 
 class DataQuery:
-    DATABASE_URL = "postgresql://dbusername:dbpassword@ip:port/db"
+    # DATABASE_URL = "postgresql://dbusername:dbpassword@ip:port/db"
+    DATABASE_URL = "postgresql://postgres:123456@localhost:5432/hello_db"
     engine = create_engine(DATABASE_URL)
 
     def __init__(self):

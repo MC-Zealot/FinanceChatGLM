@@ -1,8 +1,9 @@
 import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Integer, String, Float, Column, text
-from .transfer_to_excel import pad_stock_codes
+from transfer_to_excel import pad_stock_codes
 
-DATABASE_URL = "postgresql://dbusername:dbpassword@ip:port/db"
+# DATABASE_URL = "postgresql://dbusername:dbpassword@ip:port/db"
+DATABASE_URL = "postgresql://postgres:123456@localhost:5432/hello_db"
 
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
