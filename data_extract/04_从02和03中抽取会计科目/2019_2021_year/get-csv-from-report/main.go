@@ -579,7 +579,7 @@ func cashFlow(listfile string) {
 
 func main() {
 	//listfile := "output.txt"
-	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/output2.txt"
+	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/output.txt"
 	balance(listfile)
 	balance_static(listfile)
 	cashFlow(listfile)

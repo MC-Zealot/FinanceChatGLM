@@ -6,7 +6,7 @@ from llm_demo.util.transfer_to_excel import pad_stock_codes
 DATABASE_URL = "postgresql://postgres:123456@localhost:5432/hello_db"
 schema_name = 'public'
 table_name = 'cash_flow_statement'
-file_path = "../data/cash_flow_statement.xlsx"
+file_path = "../data_test/cash_flow_statement.xlsx"
 
 
 engine = create_engine(DATABASE_URL)

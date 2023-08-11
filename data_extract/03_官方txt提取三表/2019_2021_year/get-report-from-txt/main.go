@@ -200,7 +200,7 @@ func get_all_report_txt() {
 	// 要遍历的文件夹路径
 	dir := dir_in
 
-	file, err := os.Open("/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt/output2.txt")
+	file, err := os.Open("/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt/output.txt")
 	if err != nil {
 		log.Fatalf("failed to open file: %s", err)
 	}

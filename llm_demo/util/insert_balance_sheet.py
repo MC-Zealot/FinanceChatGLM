@@ -3,7 +3,7 @@ import pandas as pd
 from llm_demo.util.transfer_to_excel import pad_stock_codes
 
 DATABASE_URL = "postgresql://postgres:123456@localhost:5432/hello_db"
-FILE_PATH = "../data/balance_sheet.xlsx"
+FILE_PATH = "../data_test/balance_sheet.xlsx"
 SCHEMA_NAME = 'public'
 TABLE_NAME = 'balance_sheet'
 TABLE_COMMENT = "上市公司资产负债表"

@@ -34,7 +34,7 @@ var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test
 
 func main() {
 
-	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/output2.txt"
+	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/output.txt"
 
 	ofile, _ := os.Open(listfile)
 	scanner := bufio.NewScanner(ofile)

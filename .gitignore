@@ -2,3 +2,4 @@ pkg/
 .pyc
 *.class
 llm_demo/data_test/
+data_extract/data_extract_output/
