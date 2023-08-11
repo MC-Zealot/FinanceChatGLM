@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, MetaData, Table, String, Column, Integer, 
 import pandas as pd
 from llm_demo.util.transfer_to_excel import pad_stock_codes
 
-DATABASE_URL = "postgresql://dbusername:dbpassword@ip:port/db"
+DATABASE_URL = "postgresql://postgres:123456@localhost:5432/hello_db"
 FILE_PATH = "../data/balance_sheet.xlsx"
 SCHEMA_NAME = 'public'
 TABLE_NAME = 'balance_sheet'
@@ -81,7 +81,7 @@ def create_table():
     # Add table comments
     with engine.connect() as conn:
         conn.execute(text(f"COMMENT ON TABLE {SCHEMA_NAME}.{TABLE_NAME} IS '{TABLE_COMMENT}'"))
-    logger.info(f"Table {SCHEMA_NAME}.{TABLE_NAME} created with comments!")
+    print(f"Table {SCHEMA_NAME}.{TABLE_NAME} created with comments!")
 
 def read_excel_and_process():
     df = pd.read_excel(FILE_PATH, engine='openpyxl')
