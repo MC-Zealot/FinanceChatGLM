@@ -10,9 +10,9 @@ class DataQuery:
     engine = create_engine(DATABASE_URL)
 
     def __init__(self):
-        self.peopledata_path = './data/people.xlsx'
-        self.basedata_path = './data/baseinfo.xlsx'
-        self.balance_static_path = './data/balance_static.xlsx'
+        self.peopledata_path = './data_test/people.xlsx'
+        self.basedata_path = './data_test/baseinfo.xlsx'
+        self.balance_static_path = './data_test/balance_static.xlsx'
 
     @staticmethod
     def _row_to_sentence(row):

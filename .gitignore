@@ -3,3 +3,6 @@ pkg/
 *.class
 llm_demo/data_test/
 data_extract/data_extract_output/
+llm_demo/*.json
+llm_demo/*.json.bak
+llm_demo/method/__pycache__/

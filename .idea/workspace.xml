@@ -4,48 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5317740-b509-4d72-966e-aef022336e94" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e5317740-b509-4d72-966e-aef022336e94" name="Changes" comment="run">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/balance.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/balance_sheet.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/balance_static.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/balance_static.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/baseinfo.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/baseinfo.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/cash_flow_statement.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/cashflow.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/people.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/people.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/profit.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/profit_statement.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/data_test/sharesnum.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/glm_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/glm_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/method/query_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/query_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../langchain-ChatGLM" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
@@ -87,7 +59,7 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "/Users/zealot/yizhou/git/FinanceChatGLM",
@@ -96,7 +68,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -112,7 +84,7 @@
       <recent name="$PROJECT_DIR$/data_extract/allpdf" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.insert_company_annual_reports">
+  <component name="RunManager" selected="Python.sort_submit_answer">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
@@ -128,27 +100,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gen_company_annual_reports" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FinanceChatGLM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/llm_demo/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="glm_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -235,12 +186,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sort_submit_answer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="langchain-ChatGLM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../langchain-ChatGLM/data_extract" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.insert_company_annual_reports" />
-        <item itemvalue="Python.gen_company_annual_reports" />
+        <item itemvalue="Python.sort_submit_answer" />
         <item itemvalue="Python.glm_demo" />
         <item itemvalue="Python.insert_profit_statement" />
+        <item itemvalue="Python.insert_company_annual_reports" />
         <item itemvalue="Python.insert_cash_flow" />
       </list>
     </recent_temporary>
@@ -270,6 +242,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="run" />
+    <option name="LAST_COMMIT_MESSAGE" value="run" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
@@ -281,11 +257,6 @@
           <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
           <line>27</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

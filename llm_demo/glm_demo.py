@@ -9,6 +9,7 @@ from modelscope import Model
 from modelscope.pipelines import pipeline
 # model = Model.from_pretrained('ZhipuAI/chatglm2-6b', device_map='auto', revision='v1.0.7')
 # pipe = pipeline(task=Tasks.chat, model=model)
+import multiprocessing
 COMPUTE_INDEX_SET = [
     '非流动负债比率', '资产负债比率', '营业利润率', '速动比率', '流动比率', '现金比率', '净利润率',
     '毛利率', '财务费用率', '营业成本率', '管理费用率', "企业研发经费占费用",
@@ -35,7 +36,8 @@ def process_question(question_obj):
                     prompt_ = template_manager.get_template("ratio_input").format(context=prompt_res, question=q)
                     inputs_t = {'text': prompt_, 'history': []}
                     # response_ = pipe(inputs_t)['response']
-                    question_obj["answer"] = str(response_)
+                    question_obj["prompt"] = str(prompt_)
+                    # question_obj["answer"] = str(response_)
                     compute_index = True
                     break
 
@@ -51,23 +53,51 @@ def process_question(question_obj):
             prompt_ = template_manager.get_template("ratio_input").format(context=prompt_res, question=q)
             inputs_t = {'text': prompt_, 'history': []}
             # response_ = pipe(inputs_t)['response']
-            question_obj["answer"] = str(response_)
+            question_obj["prompt"] = str(prompt_)
+            # question_obj["answer"] = str(response_)
             compute_index = True
 
     if not compute_index:
         prompt_ = glm_prompt.handler_q(q=question_obj['question'])
         inputs_t = {'text': prompt_, 'history': []}
         # response_ = pipe(inputs_t)['response']
-        question_obj["answer"] = str(response_)
+        question_obj["prompt"] = str(prompt_)
+        # question_obj["answer"] = str(response_)
 
     with open("./submit_example.json", "a", encoding="utf-8") as f:
         json.dump(question_obj, f, ensure_ascii=False)
         f.write('\n')
 
+def execute_task(question_obj):
+    try:
+        ques_id=question_obj['id']
+        print(f'Processing question {ques_id}\n')
+        doc = process_question(question_obj)
+        # print(f"{file} 已成功加载123....")
+        # logger.error(f"{file} 已成功加载1233")
+        return doc
+    except Exception as e:
+        print(e)
+        print(f"{question_obj} 未能成功加载")
 
 if __name__ == '__main__':
     questions = read_questions("./data/test_questions.jsonl")
 
-    for idx, question_obj in enumerate(questions):
-        print(f'Processing question {idx}\n')
-        process_question(question_obj)
+    # for idx, question_obj in enumerate(questions):
+    #     print(f'Processing question {idx}\n')
+    #     process_question(question_obj)
+    manager = multiprocessing.Manager()
+    task_list = manager.list(questions)  # 共享的任务列表
+    # 创建进程池
+    pool = multiprocessing.Pool(14)
+    # 使用进程池中的进程来执行共享的任务列表，并获取返回值
+    results = pool.map_async(execute_task, task_list)
+    # 等待所有任务执行完成
+    results.wait()
+    # 获取每个任务的返回值
+    output = results.get()
+    # print(output) # 打印输出结果
+    # 关闭进程池
+    pool.close()
+    pool.join()
+    # return output
