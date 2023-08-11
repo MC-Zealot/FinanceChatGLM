@@ -27,14 +27,14 @@ type Tuple struct {
 	Value string
 }
 
-// 官方txt文件输入位置,末尾需要有\\
-var dir1 string = "..\\..\\..\\存放txt\\"
+// 官方txt文件输入位置,末尾需要有/
+var dir1 string = "/Users/zealot/yizhou/data/alltxt/"
 
 // 输出文件
-var outfile string = "..\\..\\..\\..\\llm_demo\\data\\people.csv"
+var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/people.csv"
 
 func main() {
-	listfile := "./output.txt"
+	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/05_其他基础信息提取/员工信息/get-employee-info/output2.txt"
 	ofile, _ := os.Open(listfile) // 请替换为你的文件名
 	scanner := bufio.NewScanner(ofile)
 	scanner.Split(bufio.ScanLines)

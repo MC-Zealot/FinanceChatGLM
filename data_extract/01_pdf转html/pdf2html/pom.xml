@@ -37,9 +37,9 @@
             <version>2.1</version>
         </dependency>
         <dependency>
-            <groupId>dom4j</groupId>
+            <groupId>org.dom4j</groupId>
             <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
+            <version>2.1.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
@@ -79,11 +79,6 @@
                     <descriptors>
                         <descriptor>src\main\resources\assembly.xml</descriptor>
                     </descriptors>
-<!--                                        <archive>-->
-<!--                                            <manifest>-->
-<!--                                                <mainClass>xfp.pdf.run.Pdf2html</mainClass>-->
-<!--                                            </manifest>-->
-<!--                                        </archive>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -95,69 +90,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-shade-plugin</artifactId>-->
-            <!--                <version>3.2.4</version>-->
-            <!--                <configuration>-->
-            <!--                    <createDependencyReducedPom>false</createDependencyReducedPom>-->
-            <!--                </configuration>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        &lt;!&ndash; 执行package的phase &ndash;&gt;-->
-            <!--                        <phase>package</phase>-->
-            <!--                        &lt;!&ndash; 为这个phase绑定goal &ndash;&gt;-->
-            <!--                        <goals>-->
-            <!--                            <goal>shade</goal>-->
-            <!--                        </goals>-->
-            <!--                        <configuration>-->
-            <!--                            &lt;!&ndash; 过滤掉以下文件，不打包 ：解决包重复引用导致的打包错误&ndash;&gt;-->
-            <!--                            <filters>-->
-            <!--                                <filter>-->
-            <!--                                    <artifact>*:*</artifact>-->
-            <!--                                    <excludes>-->
-            <!--                                        <exclude>META-INF/*.SF</exclude>-->
-            <!--                                        <exclude>META-INF/*.DSA</exclude>-->
-            <!--                                        <exclude>META-INF/*.RSA</exclude>-->
-            <!--                                    </excludes>-->
-            <!--                                </filter>-->
-            <!--                            </filters>-->
-            <!--                            <transformers>-->
-            <!--&lt;!&ndash;                                <transformer&ndash;&gt;-->
-            <!--&lt;!&ndash;                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <resource>META-INF/spring.handlers</resource>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                </transformer>&ndash;&gt;-->
-            <!--                                &lt;!&ndash; 打成可执行的jar包 的主方法入口&ndash;&gt;-->
-            <!--                                <transformer-->
-            <!--                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
-            <!--                                    <mainClass>org.extract.core.Main</mainClass>-->
-            <!--                                </transformer>-->
-
-            <!--&lt;!&ndash;                                <transformer&ndash;&gt;-->
-            <!--&lt;!&ndash;                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <resource>META-INF/spring.schemas</resource>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                </transformer>&ndash;&gt;-->
-            <!--                            </transformers>-->
-            <!--                            <relocations>-->
-            <!--&lt;!&ndash;                                <relocation>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <pattern>org.apache</pattern>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <shadedPattern>replace.apache</shadedPattern>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                </relocation>&ndash;&gt;-->
-            <!--                                <relocation>-->
-            <!--                                    <pattern>org.openxmlformats</pattern>-->
-            <!--                                    <shadedPattern>replace.openxmlformats</shadedPattern>-->
-            <!--                                </relocation>-->
-            <!--&lt;!&ndash;                                <relocation>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <pattern>org.apache.xmlbeans</pattern>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                    <shadedPattern>replace.apache.xmlbeans</shadedPattern>&ndash;&gt;-->
-            <!--&lt;!&ndash;                                </relocation>&ndash;&gt;-->
-            <!--                            </relocations>-->
-
-            <!--                        </configuration>-->
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
-
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

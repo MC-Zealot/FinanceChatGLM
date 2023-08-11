@@ -10,10 +10,10 @@ import (
 )
 
 // 官方txt文件输入位置,末尾需要有\\
-var dir_in string = "..\\..\\..\\存放txt\\"
+var dir_in string = "/Users/zealot/yizhou/data/alltxt/"
 
 // 提取的三表输出位置,末尾需要有\\
-var dir_out string = "..\\..\\..\\数据处理过程目录\\txt抽取三表19到21\\"
+var dir_out string = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_extract_output/txt_extract_3tables_19_21/"
 
 type Tuple struct {
 	key   string
@@ -96,7 +96,7 @@ func extract(recordList []Record) Report {
 }
 
 func get_all_report(filepath string) {
-	filePreName := strings.Split(filepath, "\\")[len(strings.Split(filepath, "\\"))-1]
+	filePreName := strings.Split(filepath, "/")[len(strings.Split(filepath, "/"))-1]
 	balanceFileName := dir_out + filePreName + "_balance.txt"
 	profitFileName := dir_out + filePreName + "_profit.txt"
 	cashflowFileName := dir_out + filePreName + "_cashflow.txt"
@@ -200,7 +200,7 @@ func get_all_report_txt() {
 	// 要遍历的文件夹路径
 	dir := dir_in
 
-	file, err := os.Open("./output.txt")
+	file, err := os.Open("/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt/output2.txt")
 	if err != nil {
 		log.Fatalf("failed to open file: %s", err)
 	}

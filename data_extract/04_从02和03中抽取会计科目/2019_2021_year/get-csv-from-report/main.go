@@ -14,13 +14,13 @@ import (
 )
 
 // 官方txt抽取出的报表位置
-var dir1 string = "..\\..\\..\\数据处理过程目录\\txt抽取三表19到21\\"
+var dir1 string = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_extract_output/txt_extract_3tables_19_21/"
 
 // 我们抽取出的html的位置
-var dir2 string = "..\\..\\..\\数据处理过程目录\\html抽取三表19到21\\"
+var dir2 string = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_extract_output/html_extract_3tables_19_21/"
 
 // 输出的csv位置
-var dir3 string = "..\\..\\..\\..\\llm_demo\\data\\"
+var dir3 string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/"
 
 type Tuple struct {
 	key   string
@@ -48,7 +48,7 @@ func readLine(filePath string, fileName string, map_list []string) []string {
 	file, err := os.Open(filePath) // 替换为你的文件路径
 	result := []string{}
 	for i := 0; i < len(map_list); i++ {
-		result = append(result, "0")
+		result = append(result, "-1")
 	}
 	if err != nil {
 		return result
@@ -315,7 +315,7 @@ func balance(listfile string) {
 		println(eachline)
 		result := []string{}
 		for i := 0; i < len(balance_list); i++ {
-			result = append(result, "0")
+			result = append(result, "-1")
 		}
 		path1 := dir1 + eachline + ".txt_balance.txt"
 		s1 := readLine(path1, eachline, balance_list)
@@ -376,7 +376,7 @@ func balance_static(listfile string) {
 		println(eachline)
 		result := []string{}
 		for i := 0; i < len(balance_list); i++ {
-			result = append(result, "0")
+			result = append(result, "-1")
 		}
 		path1 := dir1 + eachline + ".txt_balance.txt"
 		s1 := readLine(path1, eachline, balance_list)
@@ -458,7 +458,7 @@ func profit(listfile string) {
 		println(eachline)
 		result := []string{}
 		for i := 0; i < len(profit_list); i++ {
-			result = append(result, "0")
+			result = append(result, "-1")
 		}
 		path1 := dir1 + eachline + ".txt_profit.txt"
 		s1 := readLine(path1, eachline, profit_list)
@@ -543,7 +543,7 @@ func cashFlow(listfile string) {
 		println(eachline)
 		result := []string{}
 		for i := 0; i < len(cashflow_list); i++ {
-			result = append(result, "0")
+			result = append(result, "-1")
 		}
 		path1 := dir1 + eachline + ".txt_cashflow.txt"
 		s1 := readLine(path1, eachline, cashflow_list)
@@ -578,7 +578,8 @@ func cashFlow(listfile string) {
 }
 
 func main() {
-	listfile := "./output.txt"
+	//listfile := "output.txt"
+	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/output2.txt"
 	balance(listfile)
 	balance_static(listfile)
 	cashFlow(listfile)
