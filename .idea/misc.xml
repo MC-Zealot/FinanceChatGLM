@@ -7,8 +7,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/pom.xml" />
+        <option value="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (new_env)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

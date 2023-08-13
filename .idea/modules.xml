@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FinanceChatGLM.iml" filepath="$PROJECT_DIR$/.idea/FinanceChatGLM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/XFileParser.iml" filepath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/XFileParser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/XFileParser.iml" filepath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/XFileParser.iml" />
       <module fileurl="file://$PROJECT_DIR$/../langchain-ChatGLM/.idea/langchain-ChatGLM.iml" filepath="$PROJECT_DIR$/../langchain-ChatGLM/.idea/langchain-ChatGLM.iml" />
     </modules>
   </component>
