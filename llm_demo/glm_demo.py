@@ -2,7 +2,7 @@ import json
 from llm_demo.method.template_manager import template_manager
 from llm_demo.method.prompt_generation import (
     get_balance_static, get_balance_sheet_prompt, get_profit_statement_prompt,
-    get_cash_flow_statement_prompt, calculate_indicator, GLMPrompt
+    get_cash_flow_statement_prompt, calculate_indicator, calculate_indicator_lv, GLMPrompt
 )
 from modelscope.utils.constant import Tasks
 from modelscope import Model
@@ -16,6 +16,10 @@ COMPUTE_INDEX_SET = [
     '投资收益占营业收入比率', '研发经费与利润比值', '三费比重', '研发经费与营业收入比值', '流动负债比率',
     '净资产收益率','研发人员占职工人数','企业硕士及以上人员占职工人数'
 ]
+
+COMPUTE_INDEX_SET_lv = ['净资产增长率','销售费用增长率','财务费用增长率','管理费用增长率','研发费用增长率',
+                        '总负债增长率','流动负债增长率','货币资金增长率','固定资产增长率','无形资产增长率',
+                        '总资产增长率','营业收入增长率','营业利润增长率','净利润增长率','现金及现金等价物增长率']
 response_=""
 def read_questions(path):
     with open(path, encoding="utf-8") as file:
@@ -33,6 +37,19 @@ def process_question(question_obj):
         for t in COMPUTE_INDEX_SET:
             if t in q:
                 prompt_res = calculate_indicator(year_[0], stock_name, index_name=t)
+                if prompt_res is not None:
+                    prompt_ = template_manager.get_template("ratio_input").format(context=prompt_res, question=q)
+                    inputs_t = {'text': prompt_, 'history': []}
+                    # response_ = pipe(inputs_t)['response']
+                    question_obj["prompt"] = str(prompt_)
+                    # question_obj["answer"] = str(response_)
+                    compute_index = True
+                    break
+
+    if contains_year and has_stock and not compute_index:
+        for t in COMPUTE_INDEX_SET_lv:
+            if t in q:
+                prompt_res = calculate_indicator_lv(year_[0], stock_name, index_name=t)
                 if prompt_res is not None:
                     prompt_ = template_manager.get_template("ratio_input").format(context=prompt_res, question=q)
                     inputs_t = {'text': prompt_, 'history': []}

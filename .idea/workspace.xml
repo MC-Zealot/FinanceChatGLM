@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5317740-b509-4d72-966e-aef022336e94" name="Changes" comment="run">
-      <change afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThreadReverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThreadReverse2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm_demo/data/test_questions_3.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm_demo/data/test_questions_test.jsonl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FinanceChatGLM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinanceChatGLM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/02_html提取三表/2019-2021年度/get_report_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/02_html提取三表/2019-2021年度/get_report_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm_demo/glm_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/glm_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/method/query_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/query_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm_demo/util/transfer_to_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/transfer_to_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" afterDir="false" />
     </list>
@@ -72,27 +51,27 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Console"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/llm_demo/data" />
@@ -292,11 +271,6 @@
           <url>file://$PROJECT_DIR$/llm_demo/method/query_functions.py</url>
           <line>27</line>
           <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/llm_demo/method/prompt_generation.py</url>
-          <line>263</line>
-          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
