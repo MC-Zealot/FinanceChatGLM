@@ -8,9 +8,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
-
-	"golang.org/x/text/encoding/simplifiedchinese"
-	"golang.org/x/text/transform"
+	//"golang.org/x/text/encoding/simplifiedchinese"
+	//"golang.org/x/text/transform"
 )
 
 // 官方txt抽取出的报表位置
@@ -20,7 +19,7 @@ var dir1 string = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_ext
 var dir2 string = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_extract_output/html_extract_3tables_19_21/"
 
 // 输出的csv位置
-var dir3 string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/"
+var dir3 string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test2/"
 
 type Tuple struct {
 	key   string
@@ -150,14 +149,15 @@ func readLine1(filePath string, fileName string, map_list []string) []string {
 
 	defer file.Close()
 
-	reader := transform.NewReader(file, simplifiedchinese.GBK.NewDecoder())
-	scanner := bufio.NewScanner(reader)
+	//reader := transform.NewReader(file, simplifiedchinese.GB18030.NewDecoder())
+	scanner := bufio.NewScanner(file)
 
 	for scanner.Scan() {
 		line := scanner.Text()
 		key := strings.Split(line, "\001")[0]
 		key = strings.Trim(key, " ")
 		value := strings.Split(line, "\001")[1]
+		value = strings.Trim(value, " ")
 		if strings.Trim(value, " ") == "" {
 			continue
 		}
@@ -326,9 +326,9 @@ func balance(listfile string) {
 		for i, v := range s1 {
 			v1 := v
 			v2 := s2[i]
-			if v1 != "0" {
+			if v2 != "0" {
 				result[i] = v1
-			} else if v2 != "0" {
+			} else if v1 != "0" {
 				result[i] = v2
 			}
 		}
@@ -387,9 +387,9 @@ func balance_static(listfile string) {
 		for i, v := range s1 {
 			v1 := v
 			v2 := s2[i]
-			if v1 != "0" {
+			if v2 != "0" {
 				result[i] = v1
-			} else if v2 != "0" {
+			} else if v1 != "0" {
 				result[i] = v2
 			}
 		}
@@ -472,9 +472,9 @@ func profit(listfile string) {
 		for i, v := range s1 {
 			v1 := v
 			v2 := s2[i]
-			if v1 != "0" {
+			if v2 != "0" {
 				result[i] = v1
-			} else if v2 != "0" {
+			} else if v1 != "0" {
 				result[i] = v2
 			}
 		}
@@ -557,9 +557,9 @@ func cashFlow(listfile string) {
 		for i, v := range s1 {
 			v1 := v
 			v2 := s2[i]
-			if v1 != "0" {
+			if v2 != "0" {
 				result[i] = v1
-			} else if v2 != "0" {
+			} else if v1 != "0" {
 				result[i] = v2
 			}
 		}

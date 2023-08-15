@@ -5,8 +5,11 @@ from datetime import datetime
 
 from bs4 import BeautifulSoup
 import os
+import multiprocessing
 
 
+html_path = '/Users/zealot/yizhou/data/html_res/'
+out_dir = "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/data_extract_output/html_extract_3tables_19_21/"
 # 打开文件并读取内容
 def read_html(filePath: str):
     print(filePath)
@@ -113,10 +116,42 @@ def read_html(filePath: str):
 # print(str(datetime.now()) + "\t" +str(profit))
 # print(str(datetime.now()) + "\t" +str(cashflow))
 
+def execute_task(name):
+    try:
+        test_file_name = out_dir + name + ".txt_cashflow.txt"
+        if os.path.exists(test_file_name):
+            print("exsit:" + str(test_file_name))
+            return
+        balance, profit, cashflow = read_html(html_path + "/" + name + ".html")
+        with open(out_dir + name + ".txt_balance.txt", 'w') as f:
+            for t in balance:
+                try:
+                    f.write(t[0] + '\001' + t[1] + '\n')
+                except:
+                    continue
+        with open(out_dir + name + ".txt_profit.txt", 'w') as f:
+            for t in profit:
+                try:
+                    f.write(t[0] + '\001' + t[1] + '\n')
+                except:
+                    continue
+        with open(out_dir + name + ".txt_cashflow.txt", 'w') as f:
+            for t in cashflow:
+                try:
+                    f.write(t[0] + '\001' + t[1] + '\n')
+                except:
+                    continue
+    except Exception as e:
+        print(e)
+        print(f"{name} 未能成功加载")
+
+
+
+
 if __name__ == '__main__':
-    html_path = '../../data_extract_output/html_res/'
+
     # 输出的文件位置
-    out_dir = "../../data_extract_output/html_extract_3tables_19_21/"
+
     finish_path = out_dir
     finish_files = os.listdir(finish_path)
     finish_names=[]
@@ -135,26 +170,42 @@ if __name__ == '__main__':
         if file not in finish_names:
             html_names.append(file)
 
+    manager = multiprocessing.Manager()
+    task_list = manager.list(html_names)  # 共享的任务列表
+    # 创建进程池
+    pool = multiprocessing.Pool(14)
+    # 使用进程池中的进程来执行共享的任务列表，并获取返回值
+    results = pool.map_async(execute_task, task_list)
+    # 等待所有任务执行完成
+    results.wait()
+    # 获取每个任务的返回值
+    output = results.get()
+    # print(output) # 打印输出结果
+    # 关闭进程池
+    pool.close()
+    pool.join()
 
-
-
-    for name in html_names:
-        balance,profit,cashflow = read_html(html_path+"/"+name+".html")
-        with open(out_dir+name+".txt_balance.txt", 'w') as f:
-            for t in balance:
-                try:
-                    f.write(t[0]+'\001'+t[1]+'\n')
-                except:
-                    continue
-        with open(out_dir+name+".txt_profit.txt", 'w') as f:
-            for t in profit:
-                try:
-                    f.write(t[0]+'\001'+t[1]+'\n')
-                except:
-                    continue
-        with open(out_dir+name+".txt_cashflow.txt", 'w') as f:
-            for t in cashflow:
-                try:
-                    f.write(t[0]+'\001'+t[1]+'\n')
-                except:
-                    continue
+    # for name in html_names:
+    #     test_file_name = out_dir+name+".txt_cashflow.txt"
+    #     if os.path.exists(test_file_name):
+    #         print("exsit:" +str(test_file_name))
+    #         continue
+    #     balance,profit,cashflow = read_html(html_path+"/"+name+".html")
+    #     with open(out_dir+name+".txt_balance.txt", 'w') as f:
+    #         for t in balance:
+    #             try:
+    #                 f.write(t[0]+'\001'+t[1]+'\n')
+    #             except:
+    #                 continue
+    #     with open(out_dir+name+".txt_profit.txt", 'w') as f:
+    #         for t in profit:
+    #             try:
+    #                 f.write(t[0]+'\001'+t[1]+'\n')
+    #             except:
+    #                 continue
+    #     with open(out_dir+name+".txt_cashflow.txt", 'w') as f:
+    #         for t in cashflow:
+    #             try:
+    #                 f.write(t[0]+'\001'+t[1]+'\n')
+    #             except:
+    #                 continue

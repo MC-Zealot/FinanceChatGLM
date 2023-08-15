@@ -31,7 +31,7 @@ type Tuple struct {
 var dir1 string = "/Users/zealot/yizhou/data/alltxt/"
 
 // 输出文件
-var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/people.csv"
+var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test2/people.csv"
 
 func main() {
 	listfile := "/Users/zealot/yizhou/git/FinanceChatGLM/data_extract/05_其他基础信息提取/员工信息/get-employee-info/output.txt"

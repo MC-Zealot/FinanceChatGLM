@@ -36,12 +36,12 @@ public class Pdf2htmlMultiThread {
             String output_file_name = Path.outputAllHtmlPath+file_name+".html";
             File output_file = new File(output_file_name);
             if(output_file.exists()){
-                System.out.println("file exists: "+output_file_name);
+//                System.out.println("file exists: "+output_file_name);
                 return;
             }
             long a = new Date().getTime();
             String fileName = f.getName();
-//            System.out.println("name: "+fileName);
+            System.out.println(sdf.format(new Date())+"\t"+"name: "+fileName);
             pdd = PDDocument.load(f);
             ContentPojo contentPojo = PdfParser.parsingUnTaggedPdfWithTableDetection(pdd);
             MarkPdf.markTitleSep(contentPojo);
@@ -59,8 +59,9 @@ public class Pdf2htmlMultiThread {
                 if(pdd!=null){
                     pdd.close();
                 }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) {
+//                throw new RuntimeException(e);
+                e.printStackTrace();
             }
         }
     }
@@ -92,7 +93,7 @@ public class Pdf2htmlMultiThread {
         Pdf2htmlMultiThread p = new Pdf2htmlMultiThread();
         File file = new File(Path.inputAllPdfPath);
         File[] files = file.listFiles();
-        Thread(files, 7);
+        Thread(files, 1);
 //        for (File f : files) {
 //            p.extract_pdf_2_html(f);
 //        }

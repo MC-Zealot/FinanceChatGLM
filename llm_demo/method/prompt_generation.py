@@ -3,7 +3,7 @@ import pandas as pd
 from fuzzywuzzy import process
 from llm_demo.method.template_manager import template_manager
 
-def find_best_match(question, mapping, threshold=40):
+def find_best_match(question, mapping, threshold=50):
     matches = process.extract(question, mapping.keys())
     best_matches = [match[0] for match in matches if match[1] >= threshold]
     return best_matches
@@ -240,7 +240,7 @@ def calculate_indicator(year_, stock_name,index_name):
     "营业利润率": (["营业利润", "营业收入"], "营业利润 / 营业收入 × 100"),
     "速动比率": (["流动资产合计", "存货", "流动负债合计"], "(流动资产合计 - 存货) / 流动负债合计"),
     "流动比率": (["流动资产合计", "流动负债合计"], "流动资产合计 / 流动负债合计"),
-    "现金比率": (["货币资金", "流动负债合计"], "货币资金 / 流动负债合计"),
+    "现金比率": (["货币资金", "流动负债合计"], "货币资金 / 流动负债合计 × 100"),
     "净利润率": (["净利润", "营业收入"], "净利润 / 营业收入 × 100"),
     "毛利率": (["营业收入", "营业成本"], "(营业收入-营业成本) / 营业收入 × 100"),
     "财务费用率": (["财务费用", "营业收入"], "财务费用 / 营业收入 × 100"),
@@ -253,18 +253,24 @@ def calculate_indicator(year_, stock_name,index_name):
     "三费比重": (["管理费用", "财务费用","销售费用","营业收入"],"(管理费用+财务费用+销售费用) / 营业收入"),
     "研发经费与营业收入比值": (["研发费用", "营业收入"], "研发费用 / 营业收入"),
     "企业研发经费占费用": (["销售费用","财务费用","管理费用","研发费用"], "研发费用 / (研发费用+管理费用+财务费用+销售费用)"),
+    "净资产收益率": (["净利润", "净资产"], "净利润 / 净资产 × 100"),
+    "研发人员占职工人数": (["研发人员", "职工人数"], "研发人员 / 职工人数"),
+    "企业硕士及以上人员占职工人数": (["硕士以上人数", "职工人数"], "硕士以上人数 / 职工人数"),
     }
     formula_data = financial_formulas[index_name]
     data_values = {}
     values_str = []
-    finance_data = dq.get_financial_data(year_, stock_name)
+    # finance_data = dq.get_financial_data(year_, stock_name)
+    finance_data = dq.query_people_data_v2(year_, stock_name)
     if len(finance_data)==0:
         return None
 
     for field in formula_data[0]:
+        if field not in finance_data:
+            break
         value = finance_data.get(field)
         data_values[field] = value
-        values_str.append(f"{year_}年{field}为{value:.2f}元")
+        values_str.append(f"{year_}年{field}为{value:.2f}人")
     result_str = ', '.join(values_str)
     formula_str = formula_data[1]
     calculation_str = formula_str.replace("×", "*").replace(" ", "")
@@ -275,7 +281,7 @@ def calculate_indicator(year_, stock_name,index_name):
     except Exception as e :
         print(calculation_str)
         return None
-    if index_name in ["速动比率","流动比率"]:
+    if index_name in ["速动比率","流动比率","研发人员占职工人数","企业硕士及以上人员占职工人数"]:
         return f"{stock_name}{result_str}，根据公式:{index_name}={formula_str}，得出结果{stock_name}{year_}年{index_name}{result_value:.2f}。"
     else:
         return f"{stock_name}{result_str}，根据公式:{index_name}={formula_str}，得出结果{stock_name}{year_}年{index_name}{result_value:.2f}%。"

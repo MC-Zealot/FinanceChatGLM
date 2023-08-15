@@ -9,7 +9,7 @@ engine = create_engine(DATABASE_URL)
 metadata = MetaData()
 schema_name = 'public'
 table_name = 'profit_statement'
-file_path = "../data_test/profit_statement.xlsx"
+file_path = "../data_test2/profit_statement.xlsx"
 
 profit_statement_items = [
     ("reporting_year", Integer, "报告年份"),

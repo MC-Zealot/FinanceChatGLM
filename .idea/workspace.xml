@@ -5,62 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5317740-b509-4d72-966e-aef022336e94" name="Changes" comment="run">
-      <change afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThreadReverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThreadReverse2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llm_demo/data/test_questions_3.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llm_demo/data/test_questions_test.jsonl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FinanceChatGLM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinanceChatGLM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/XFileParser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/XFileParser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/arrange/MarkPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/arrange/MarkPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/arrange/PdfXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/arrange/PdfXml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/core/BirdViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/BirdViewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/core/ParaStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/ParaStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/BoldStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/BoldStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/ContentPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/ContentPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/ExtractPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/ExtractPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/LineStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/LineStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/MarkPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/MarkPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/SearchPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/SearchPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/TextBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/TextBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/pojo/Tu.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/pojo/Tu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/run/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/run/Pdf2html.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2html.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/table/CellAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/table/CellAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/table/TableLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/table/TableLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/thirdparty/CustomPDFRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/thirdparty/CustomPDFRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/thirdparty/CustomPageDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/thirdparty/CustomPageDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/thirdparty/GetImageEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/thirdparty/GetImageEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/ContentRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/ContentRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/FileTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/FileTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/ModifiedPDFTextStripperByArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/ModifiedPDFTextStripperByArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/RenderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/RenderInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/SettingReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/SettingReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/java/xfp/pdf/tools/TextTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/tools/TextTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/assembly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/assembly.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/extract_default/doc_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/extract_default/doc_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/extract_default/msg_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/extract_default/msg_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/extract_default/pdf_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/extract_default/pdf_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/mark_default/doc_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/mark_default/doc_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/mark_default/msg_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/mark_default/msg_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/mark_default/original/pdf_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/mark_default/original/pdf_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/src/main/resources/mark_default/pdf_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/resources/mark_default/pdf_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/assembly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/assembly.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/extract_default/doc_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/extract_default/doc_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/extract_default/msg_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/extract_default/msg_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/extract_default/pdf_extract.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/extract_default/pdf_extract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/mark_default/doc_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/mark_default/doc_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/mark_default/msg_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/mark_default/msg_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/mark_default/original/pdf_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/mark_default/original/pdf_mark.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf转html/pdf2html/target/classes/mark_default/pdf_mark.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/target/classes/mark_default/pdf_mark.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/PdfParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/core/UnTaggedAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/02_html提取三表/2019-2021年度/get_report_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/02_html提取三表/2019-2021年度/get_report_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/glm_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/glm_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/method/query_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/query_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/gen_company_annual_reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_balance_sheet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/util/transfer_to_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/util/transfer_to_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,34 +72,34 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zealot/yizhou/git/FinanceChatGLM&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Console"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/llm_demo/data" />
       <recent name="$PROJECT_DIR$/data_extract/05_其他基础信息提取/股数/get-report-info5" />
       <recent name="$PROJECT_DIR$/data_extract/05_其他基础信息提取/地址+邮箱+法人+网站/get-report-info3" />
       <recent name="$PROJECT_DIR$/data_extract/05_其他基础信息提取/员工信息/get-employee-info" />
       <recent name="$PROJECT_DIR$/data_extract/04_从02和03中抽取会计科目/2019_2021_year/get-csv-from-report" />
-      <recent name="$PROJECT_DIR$/data_extract/03_官方txt提取三表/2019_2021_year/get-report-from-txt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_extract/存放pdf" />
@@ -139,7 +109,7 @@
       <recent name="xfp.pdf.run" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Pdf2htmlMultiThread">
+  <component name="RunManager" selected="Python.glm_demo">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
@@ -157,32 +127,6 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
-    <configuration name="Pdf2html" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xfp.pdf.run.Pdf2html" />
-      <module name="XFileParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xfp.pdf.run.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Pdf2htmlMultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xfp.pdf.run.Pdf2htmlMultiThread" />
-      <module name="XFileParser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xfp.pdf.run.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="glm_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FinanceChatGLM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,6 +140,69 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm_demo/glm_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insert_cash_flow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FinanceChatGLM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/llm_demo/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm_demo/util/insert_cash_flow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insert_company_annual_reports" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FinanceChatGLM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/llm_demo/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm_demo/util/insert_company_annual_reports.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insert_profit_statement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FinanceChatGLM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/llm_demo/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/llm_demo/util/insert_profit_statement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,33 +232,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="langchain-ChatGLM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../langchain-ChatGLM/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Pdf2htmlMultiThread" />
-        <item itemvalue="Python.utils" />
-        <item itemvalue="Python.sort_submit_answer" />
         <item itemvalue="Python.glm_demo" />
+        <item itemvalue="Python.sort_submit_answer" />
+        <item itemvalue="Python.insert_profit_statement" />
+        <item itemvalue="Python.insert_company_annual_reports" />
+        <item itemvalue="Python.insert_cash_flow" />
       </list>
     </recent_temporary>
   </component>
@@ -292,29 +279,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py</url>
           <line>165</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="28" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_extract/02_html提取三表/2019-2021年度/get_report_info.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="29" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/method/query_functions.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/data_extract/01_pdf_to_html/pdf2html/src/main/java/xfp/pdf/run/Pdf2htmlMultiThread.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="30" />
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/method/prompt_generation.py</url>
+          <line>263</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

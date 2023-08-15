@@ -61,7 +61,8 @@ public class PdfParser {
         BirdViewer.mergePElement(docPages,untaggedContext);
         List<ContentPojo.contentElement> outList = new ArrayList<>();
         for(int i=0;i<docPages.size();i++){
-            outList.addAll(docPages.get(i));
+//            outList.addAll(docPages.get(i));
+            outList.addAll(new ArrayList<>(docPages.get(i)));
         }
         //合并跨页表格元素
         BirdViewer.mergeTableElements(outList,pdd);

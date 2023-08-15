@@ -150,9 +150,9 @@ basic_columns = [
 ]
 
 if __name__ == '__main__':
-    process_csv_to_excel('../data_test/profit.csv', '../data_test/profit_statement.xlsx', profit_columns)
-    process_csv_to_excel('../data_test/cashflow.csv', '../data_test/cash_flow_statement.xlsx', cash_columns)
-    process_csv_to_excel('../data_test/balance.csv', '../data_test/balance_sheet.xlsx', balance_columns)
-    process_csv_to_excel('../data_test/balance_static.csv', '../data_test/balance_static.xlsx', balance_static_columns)
-    process_csv_to_excel('../data_test/people.csv', '../data_test/people.xlsx', people_columns)
-    process_csv_to_excel('../data_test/baseinfo.csv', '../data_test/baseinfo.xlsx', basic_columns)
+    process_csv_to_excel('../data_test2/profit.csv', '../data_test2/profit_statement.xlsx', profit_columns)
+    process_csv_to_excel('../data_test2/cashflow.csv', '../data_test2/cash_flow_statement.xlsx', cash_columns)
+    process_csv_to_excel('../data_test2/balance.csv', '../data_test2/balance_sheet.xlsx', balance_columns)
+    process_csv_to_excel('../data_test2/balance_static.csv', '../data_test2/balance_static.xlsx', balance_static_columns)
+    process_csv_to_excel('../data_test2/people.csv', '../data_test2/people.xlsx', people_columns)
+    process_csv_to_excel('../data_test2/baseinfo.csv', '../data_test2/baseinfo.xlsx', basic_columns)

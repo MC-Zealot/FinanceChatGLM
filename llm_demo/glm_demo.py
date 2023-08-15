@@ -13,7 +13,8 @@ import multiprocessing
 COMPUTE_INDEX_SET = [
     '非流动负债比率', '资产负债比率', '营业利润率', '速动比率', '流动比率', '现金比率', '净利润率',
     '毛利率', '财务费用率', '营业成本率', '管理费用率', "企业研发经费占费用",
-    '投资收益占营业收入比率', '研发经费与利润比值', '三费比重', '研发经费与营业收入比值', '流动负债比率'
+    '投资收益占营业收入比率', '研发经费与利润比值', '三费比重', '研发经费与营业收入比值', '流动负债比率',
+    '净资产收益率','研发人员占职工人数','企业硕士及以上人员占职工人数'
 ]
 response_=""
 def read_questions(path):
@@ -64,24 +65,25 @@ def process_question(question_obj):
         question_obj["prompt"] = str(prompt_)
         # question_obj["answer"] = str(response_)
 
-    with open("./submit_example.json", "a", encoding="utf-8") as f:
+    with open("./submit_example2_3.json", "a", encoding="utf-8") as f:
         json.dump(question_obj, f, ensure_ascii=False)
         f.write('\n')
 
 def execute_task(question_obj):
     try:
         ques_id=question_obj['id']
-        print(f'Processing question {ques_id}\n')
+        # print(f'Processing question {ques_id}\n')
         doc = process_question(question_obj)
         # print(f"{file} 已成功加载123....")
-        # logger.error(f"{file} 已成功加载1233")
+        print(f"{question_obj} 已成功加载1233")
         return doc
     except Exception as e:
         print(e)
         print(f"{question_obj} 未能成功加载")
 
 if __name__ == '__main__':
-    questions = read_questions("./data/test_questions.jsonl")
+    # questions = read_questions("./data/test_questions_test.jsonl")
+    questions = read_questions("./data/test_questions_3.jsonl")
 
     # for idx, question_obj in enumerate(questions):
     #     print(f'Processing question {idx}\n')

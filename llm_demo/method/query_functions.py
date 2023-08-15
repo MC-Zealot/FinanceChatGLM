@@ -24,6 +24,10 @@ class DataQuery:
         details = " 。\n ".join([f"{col}为{value}" for col, value in other_data.items()])
         return f"- {name}(全称:{company_full_name})的{year}年报内容:\n{details}。\n"
 
+    def _row_to_dict(row):
+        other_data = {k: v for k, v in row.items() if k not in ['报告年份', '证券代码', '证券简称']}
+        return other_data
+
     def query_people_data(self, report_year, stock_name):
         data = pd.read_excel(self.peopledata_path, index_col=None)
         data = data.loc[(data['股票简称'] == stock_name)]
@@ -37,6 +41,25 @@ class DataQuery:
         sentences = data.apply(self._row_to_sentence, axis=1)
         sentences = '\n -'.join(sentences)
         return sentences
+
+    def query_people_data_v2(self, report_year, stock_name):
+        data = pd.read_excel(self.peopledata_path, index_col=None)
+        data = data.loc[(data['股票简称'] == stock_name)]
+        data = data.ffill().bfill()
+        data.dropna(axis=0, how='any')
+        data = data.loc[(data['报告年份'] == int(report_year))]
+        data = data.loc[:, (data != 0).any(axis=0)]
+
+        if data.empty:
+            return ''
+        # people_data_info = data.apply(self._row_to_dict, axis=1)
+        people_data_info = data.to_dict()
+        ret_dict={}
+        for key, val in people_data_info.items():
+            new_dict = people_data_info[key]
+            for new_key, new_val in new_dict.items():
+                ret_dict[key] = new_val
+        return ret_dict
 
     def query_basic_data(self, stock_name):
         data = pd.read_excel(self.basedata_path, index_col=None)

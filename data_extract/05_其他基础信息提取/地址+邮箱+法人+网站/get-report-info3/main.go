@@ -30,7 +30,7 @@ type Tuple struct {
 var dir1 string = "/Users/zealot/yizhou/data/alltxt/"
 
 // 输出文件
-var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/baseinfo.csv"
+var outfile string = "/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test2/baseinfo.csv"
 
 func main() {
 

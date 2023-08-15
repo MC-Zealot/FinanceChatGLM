@@ -15,7 +15,7 @@ for i, j, k in os.walk(filePath):
 print(len(file_list))
 # exit(0)
 # report_date,company_full_name,stock_code,company_short_name,report_year,report_type,file_name
-output_path="/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test/company_annual_reports.csv"
+output_path="/Users/zealot/yizhou/git/FinanceChatGLM/llm_demo/data_test2/company_annual_reports.csv"
 with open(output_path, "w", encoding="utf8") as f2:
     f2.write("report_date,company_full_name,stock_code,company_short_name,report_year,report_type,file_name" + '\n')
     for line in file_list:

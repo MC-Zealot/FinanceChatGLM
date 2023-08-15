@@ -360,7 +360,10 @@ public class UnTaggedAnalyser {
 
 
             //如果是最后一个了，判断是否是页码
-            if(count == blockList.size()){
+            if(count == blockList.size() && newRegion.size() - 1 >=0){
+//                if(newRegion.size() - 1 <0){
+//                    System.out.println("~~~");
+//                }
                 boolean b = verifyPagination(untaggedContext,newRegion.get(newRegion.size() - 1));
                 if(b){
                     lineStatuses[lineStatuses.length-1] = LineStatus.Footer;
@@ -651,8 +654,11 @@ public class UnTaggedAnalyser {
             pdfStyleStruct.setFontSize(tp.getFontSize());
             pdfStyleStruct.setFontSizePt(tp.getFontSizeInPt());
             //如果是空字符串，这里的getFont的结果可能为null
-            if(tp.getFont()!=null){
+            if(tp.getFont()!=null && tp.getFont().getFontDescriptor()!=null){
                 PDFontDescriptor fontDescriptor = tp.getFont().getFontDescriptor();
+//                if(fontDescriptor==null){
+//                    System.out.println("~~~~~");
+//                }
                 pdfStyleStruct.setFontName(fontDescriptor.getFontName());
                 pdfStyleStruct.setFontWeight(fontDescriptor.getFontWeight());
                 pdfStyleStruct.setCharSet(fontDescriptor.getCharSet());
@@ -669,6 +675,10 @@ public class UnTaggedAnalyser {
     }
 
     public static List<List<Tu.Tuple2<TextPosition, RenderInfo>>> sortForRange(List<List<Tu.Tuple2<TextPosition, RenderInfo>>> region){
+        if(region==null){
+            System.out.println("~~~");
+            return new ArrayList<>();
+        }
         return region.stream().sorted((o1, o2) -> {
             Tu.Tuple2<TextPosition, RenderInfo> p1 = o1.get(0);
             Tu.Tuple2<TextPosition, RenderInfo> p2 = o2.get(0);
