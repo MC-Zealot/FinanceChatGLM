@@ -82,7 +82,7 @@ def process_question(question_obj):
         question_obj["prompt"] = str(prompt_)
         # question_obj["answer"] = str(response_)
 
-    with open("./submit_example2_3.json", "a", encoding="utf-8") as f:
+    with open("./submit_example2_lv.json", "a", encoding="utf-8") as f:
         json.dump(question_obj, f, ensure_ascii=False)
         f.write('\n')
 

@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5317740-b509-4d72-966e-aef022336e94" name="Changes" comment="run">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/data/test_questions_3.jsonl" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/data/test_questions_3.jsonl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm_demo/glm_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/glm_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/llm_demo/method/prompt_generation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/data_extract/sort_submit_answer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../langchain-ChatGLM/utils/utils.py" afterDir="false" />
@@ -270,6 +271,31 @@
           <url>file://$PROJECT_DIR$/llm_demo/method/query_functions.py</url>
           <line>27</line>
           <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/glm_demo.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/llm_demo/method/prompt_generation.py</url>
+          <line>350</line>
+          <option name="timeStamp" value="117" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

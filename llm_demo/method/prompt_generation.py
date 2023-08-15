@@ -330,8 +330,16 @@ def calculate_indicator_lv(year_, stock_name,index_name):
     last_year = int(year_) - 1
     finance_data = dq.get_financial_data(year_, stock_name)
     finance_data_last = dq.get_financial_data(str(last_year), stock_name)
-    if len(finance_data)==0:
+    if len(finance_data) ==0 or len(finance_data_last)==0:
         return None
+
+    for field in formula_data[0]:
+        if field not in finance_data_last:
+            print("field not in finance_data_last: "+str(field))
+            break
+        value = finance_data_last.get(field)
+        data_values["上年"+str(field)] = value
+        values_str.append(f"{last_year}年{field}为{value:.2f}元")
 
     for field in formula_data[0]:
         if field not in finance_data:
@@ -339,13 +347,6 @@ def calculate_indicator_lv(year_, stock_name,index_name):
         value = finance_data.get(field)
         data_values[field] = value
         values_str.append(f"{year_}年{field}为{value:.2f}元")
-
-    for field in finance_data_last[0]:
-        if field not in finance_data:
-            break
-        value = finance_data.get(field)
-        data_values["上年"+str(field)] = value
-        values_str.append(f"{last_year}年{field}为{value:.2f}元")
 
     result_str = ', '.join(values_str)
     formula_str = formula_data[1]
